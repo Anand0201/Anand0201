@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SMS</title>
+        <link rel="stylesheet" type="text/css" href="/static/Stu.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="container">
+        <h1>Form</h1>
+            <form action="/add_student" method="POST">
+                <label for="name">First Name:</label>
+                <input type="text" id="fname"name="fname" required>
+
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname"name="lname" required>
+                
+                <label for="enrollment">Enrollment Number</label>
+                <input type="tel" id="enrollment"name="enrollment" required>
+                
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone"name="phone"required>
+
+                <label for="branch">Branch</label>
+                <select name="branch" id="branch" required>
+                    <option value="">choose your branch</option>
+                    <option value="bachuler of engineering">Bachuler of Engineering</option>
+                    <option value="diploma in engineering">Diploma in Engineering</option>
+                </select>
+
+                <label for="department">Department</label>
+            
+                <select name="department" id="department" required>
+                    <option value="">Choose your department</option>
+                    <option value="Computer Department">Computer Department</option>
+                    <option value="Mechanical Department">Mechanical Department</option>
+                    <option value="Civil Department">Civil Department</option>
+                    <option value="Electrical Department">Electrical Department</option>
+                </select>
+
+                <input type="submit" value="Submit" onclick=add_student>
+            </form>
+        </div>
+    </body>
+</html>
